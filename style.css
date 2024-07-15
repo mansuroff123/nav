@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul.navbar {
+    list-style-type: none;
+    overflow: hidden;;
+    background: #333;
+}
+
+.navbar li {
+    float: left;
+}
+
+ul.navbar li a {
+    display: block;
+    padding: 14px 16px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background: #04AA6D;
+}
+
+.navbar .right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .right, .navbar li {
+        float: none;
+    }
+}
+
